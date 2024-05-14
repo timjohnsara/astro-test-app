@@ -18,6 +18,7 @@
 
 
 <p align="center">
+<h4>Starter reference links:</h4>
 <a href="https://stackblitz.com/github/zankhq/astro-starter">
 	<img src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" />
 </a>
@@ -60,7 +61,6 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
-If you want to switch to npm make sure to remove pnpm-lock.yaml and node_modules folder and then run `npm install`
 
 ### 🚀 Project Structure
 
