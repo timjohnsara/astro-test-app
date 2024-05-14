@@ -152,7 +152,17 @@ export const CAROUSEL: carousel[] = [
 		format: "webp",
 		width: 1350,
 		height: 1080,
-	}
+	},
+	{
+		image: "/src/assets/images/carousel/slide-2.png",
+		alt: "Dashboard",
+		category: "Dashboard",
+		text: "With turn-key integrations, Datadog seamlessly aggregates metrics and events across the full devops stack",
+		link: '#',
+		format: "webp",
+		width: 1350,
+		height: 1080,
+	},
 ]
 
 type customer = {

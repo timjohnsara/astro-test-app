@@ -88,16 +88,3 @@ p, li {
   .db-tile-7 { grid-area: 7 / 1 / 13 / 4; }
 }
 
-
-@media screen and (min-width: 1px) and (max-width: 649px){
-  aside {
-    position: fixed;
-    display: none;
-  }
-}
-
-@media screen and (min-width: 650px) {
-  aside {
-    position: sticky;
-  }
-}

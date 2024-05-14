@@ -64,10 +64,8 @@ const { items } = Astro.props as Props;
 
     @media screen and (min-width: 1200px) {
         .customer-list-wrapper {
-
             grid-template-columns: repeat(auto-fit, minmax(176px, 1fr));
-            grid-template-rows: repeat(5, 1fr);
-
+            grid-template-rows: repeat(0, 1fr);
         }
         .active { grid-area: 1 / 2 / 3 / 4; }
     }

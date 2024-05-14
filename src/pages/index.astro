@@ -22,11 +22,11 @@ const t = translations(Astro.url);
                     <button class="self-end	w-full md:max-md:mb-10 bg-transparent hover:bg-dd-purple text-dd-purple font-semibold hover:text-white py-4 px-4 border border-dd-purple hover:border-transparent text-lg text-uppercase">Try Free</button>
                 </div>
             </div>
-            <Pricing items={PRICINGS} />
+            <Pricing items={PRICINGS} client:load />
             <Features items={FEATURES[0]}  />
             <Features items={FEATURES[1]} />
             <Features items={FEATURES[2]}  />
-            <Customers items={CUSTOMERS} />
+            <Customers items={CUSTOMERS} client:load />
             <Carousel items={CAROUSEL}  />
         </div>
 	</div>
