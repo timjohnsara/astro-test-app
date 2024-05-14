@@ -7,7 +7,7 @@ import { Image } from 'astro:assets';
 
 const { items } = Astro.props as Props;
 ---
-<div class="module db-tile-7">
+<div class="module db-tile-7 mt-5 md:mt-0 mb-5 md:mb-0">
     <div class="customer-list-wrapper">
      {items.map((item, index) => (
 
@@ -85,7 +85,6 @@ const { items } = Astro.props as Props;
 
     customerItems.forEach((btn) => {
         btn.addEventListener("click", () => {
-            console.log('btn', btn)
             customerItems.forEach((otherBtn) => {
                 if (otherBtn !== btn) {
                     otherBtn.classList.remove("active");

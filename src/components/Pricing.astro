@@ -9,7 +9,7 @@ const { items } = Astro.props as Props;
 <div class="module db-tile-2">
   <div class="module bg-dd-grey dark:bg-gray-900">
 
-      <div class="space-y-12 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+      <div class="mt-5 md:mt-0 mb-5 md:mb-0 md:space-y-12 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
           <!-- Pricing Card -->
           {items.map((item) => (
           <div class="p-6 mx-auto max-w-lg text-gray-900">
@@ -23,12 +23,12 @@ const { items } = Astro.props as Props;
                       <span>{item.tag}</span>
                   </li>
                   <li class="w-full mb-2">
-                    <div class="mb-2">{item.header}</div>
-                    <div class="header-1 mb-3">{item.price}</div>
-                    <div class="mb-2">{item.subheader}</div>
+                    <div class="lg:mb-2">{item.header}</div>
+                    <div class="header-1 lg:mb-3">{item.price}</div>
+                    <div class="lg:mb-2">{item.subheader}</div>
                   </li>
-                  <li class="w-full pricing-details mb-12" set:html={item.details}></li>
-                  <li class="w-full mt-10 self-end"><a href="#" class={item.category_color + ' underline'}">{item.cta}</a></li>
+                  <li class="w-full pricing-details md:mb-10 lg:mb-12" set:html={item.details}></li>
+                  <li class="w-full md:mt-5 lg:mt-10 self-end"><a href="#" class={item.category_color + ' underline'}">{item.cta}</a></li>
               </ul>
           </div>
           ))}

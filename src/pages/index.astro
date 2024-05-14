@@ -11,15 +11,15 @@ import { PRICINGS, FEATURES, CUSTOMERS, CAROUSEL } from "@src/consts";
 const t = translations(Astro.url);
 ---
 <Layout>
-    <div class="dashboard bg-white">
-        <div class="pt-16 dashboard-grid-container">
+    <div class="dashboard bg-white p-7 lg:pr-12">
+        <div class="dashboard-grid-container">
             <div class="module-1 db-tile-1">
                 <div class="flex flex-wrap h-full">
-                    <div class="w-full">
+                    <div class="w-full max-w-[420px]">
                         <h1 class="mb-5" set:html={t.home_header} />
                         <h3 set:html={t.home_subheader} />
                     </div>
-                    <button class="self-end	w-full bg-transparent hover:bg-dd-purple text-dd-purple font-semibold hover:text-white py-4 px-4 border border-dd-purple hover:border-transparent text-lg text-uppercase">Try Free</button>
+                    <button class="self-end	w-full md:max-md:mb-10 bg-transparent hover:bg-dd-purple text-dd-purple font-semibold hover:text-white py-4 px-4 border border-dd-purple hover:border-transparent text-lg text-uppercase">Try Free</button>
                 </div>
             </div>
             <Pricing items={PRICINGS} />

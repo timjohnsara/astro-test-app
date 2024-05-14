@@ -13,7 +13,7 @@ importers:
         version: 0.3.2(@types/alpinejs@3.13.10)(alpinejs@3.13.10)
       '@astrojs/mdx':
         specifier: ^2.0.0
-        version: 2.3.1(astro@4.7.1(typescript@5.4.5))
+        version: 2.3.1(astro@4.7.1(sass@1.77.1)(typescript@5.4.5))
       '@astrojs/rss':
         specifier: ^4.0.1
         version: 4.0.5
@@ -22,7 +22,7 @@ importers:
         version: 3.1.4
       '@astrojs/tailwind':
         specifier: ^5.0.3
-        version: 5.1.0(astro@4.7.1(typescript@5.4.5))(tailwindcss@3.4.3)
+        version: 5.1.0(astro@4.7.1(sass@1.77.1)(typescript@5.4.5))(tailwindcss@3.4.3)
       '@fontsource-variable/inter':
         specifier: ^5.0.16
         version: 5.0.18
@@ -37,16 +37,19 @@ importers:
         version: 3.13.10
       astro:
         specifier: ^4.0.3
-        version: 4.7.1(typescript@5.4.5)
+        version: 4.7.1(sass@1.77.1)(typescript@5.4.5)
       astro-carousel:
         specifier: ^2.0.8
-        version: 2.0.8(astro@4.7.1(typescript@5.4.5))
+        version: 2.0.8(astro@4.7.1(sass@1.77.1)(typescript@5.4.5))
       astro-i18n-aut:
         specifier: ^0.5.0
-        version: 0.5.0(astro@4.7.1(typescript@5.4.5))(kleur@4.1.5)
+        version: 0.5.0(astro@4.7.1(sass@1.77.1)(typescript@5.4.5))(kleur@4.1.5)
       flowbite:
         specifier: ^2.3.0
         version: 2.3.0
+      sass:
+        specifier: ^1.77.1
+        version: 1.77.1
       sharp:
         specifier: ^0.33.0
         version: 0.33.3
@@ -1407,6 +1410,9 @@ packages:
   ieee754@1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
 
+  immutable@4.3.6:
+    resolution: {integrity: sha512-Ju0+lEMyzMVZarkTn/gqRpdqd5dOPaz1mCZ0SH3JV6iFw81PldE/PEB1hWVEA288HPt4WXW8O7AWxB10M+03QQ==}
+
   import-meta-resolve@4.1.0:
     resolution: {integrity: sha512-I6fiaX09Xivtk+THaMfAwnA3MVA5Big1WHF1Dfx9hFuvNIWpXnorlkzhcQf6ehrqQiiZECRt1poOAkPmer3ruw==}
 
@@ -2199,6 +2205,11 @@ packages:
   sass-formatter@0.7.9:
     resolution: {integrity: sha512-CWZ8XiSim+fJVG0cFLStwDvft1VI7uvXdCNJYXhDvowiv+DsbD1nXLiQ4zrE5UBvj5DWZJ93cwN0NX5PMsr1Pw==}
 
+  sass@1.77.1:
+    resolution: {integrity: sha512-OMEyfirt9XEfyvocduUIOlUSkWOXS/LAt6oblR/ISXCTukyavjex+zQNm51pPCOiFKY1QpWvEH1EeCkgyV3I6w==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+
   sax@1.3.0:
     resolution: {integrity: sha512-0s+oAmw9zLl1V1cS9BtZN7JAd0cW5e0QH4W3LWEK6a4LaLEA2OTpGYWDY+6XasBLtz6wkm3u1xRw95mRuJ59WA==}
 
@@ -2807,12 +2818,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@2.3.1(astro@4.7.1(typescript@5.4.5))':
+  '@astrojs/mdx@2.3.1(astro@4.7.1(sass@1.77.1)(typescript@5.4.5))':
     dependencies:
       '@astrojs/markdown-remark': 5.1.0
       '@mdx-js/mdx': 3.0.1
       acorn: 8.11.3
-      astro: 4.7.1(typescript@5.4.5)
+      astro: 4.7.1(sass@1.77.1)(typescript@5.4.5)
       es-module-lexer: 1.5.2
       estree-util-visit: 2.0.0
       github-slugger: 2.0.0
@@ -2843,9 +2854,9 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.23.7
 
-  '@astrojs/tailwind@5.1.0(astro@4.7.1(typescript@5.4.5))(tailwindcss@3.4.3)':
+  '@astrojs/tailwind@5.1.0(astro@4.7.1(sass@1.77.1)(typescript@5.4.5))(tailwindcss@3.4.3)':
     dependencies:
-      astro: 4.7.1(typescript@5.4.5)
+      astro: 4.7.1(sass@1.77.1)(typescript@5.4.5)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
       postcss-load-config: 4.0.2(postcss@8.4.38)
@@ -3501,13 +3512,13 @@ snapshots:
 
   astring@1.8.6: {}
 
-  astro-carousel@2.0.8(astro@4.7.1(typescript@5.4.5)):
+  astro-carousel@2.0.8(astro@4.7.1(sass@1.77.1)(typescript@5.4.5)):
     dependencies:
-      astro: 4.7.1(typescript@5.4.5)
+      astro: 4.7.1(sass@1.77.1)(typescript@5.4.5)
 
-  astro-i18n-aut@0.5.0(astro@4.7.1(typescript@5.4.5))(kleur@4.1.5):
+  astro-i18n-aut@0.5.0(astro@4.7.1(sass@1.77.1)(typescript@5.4.5))(kleur@4.1.5):
     dependencies:
-      astro: 4.7.1(typescript@5.4.5)
+      astro: 4.7.1(sass@1.77.1)(typescript@5.4.5)
       dedent: 1.5.3
       fast-glob: 3.3.2
       fs-extra: 11.2.0
@@ -3529,7 +3540,7 @@ snapshots:
       - prettier-plugin-astro
       - typescript
 
-  astro@4.7.1(typescript@5.4.5):
+  astro@4.7.1(sass@1.77.1)(typescript@5.4.5):
     dependencies:
       '@astrojs/compiler': 2.8.0
       '@astrojs/internal-helpers': 0.4.0
@@ -3588,8 +3599,8 @@ snapshots:
       tsconfck: 3.0.3(typescript@5.4.5)
       unist-util-visit: 5.0.0
       vfile: 6.0.1
-      vite: 5.2.11
-      vitefu: 0.2.5(vite@5.2.11)
+      vite: 5.2.11(sass@1.77.1)
+      vitefu: 0.2.5(vite@5.2.11(sass@1.77.1))
       which-pm: 2.1.1
       yargs-parser: 21.1.1
       zod: 3.23.7
@@ -4247,6 +4258,8 @@ snapshots:
   ico-endec@0.1.6: {}
 
   ieee754@1.2.1: {}
+
+  immutable@4.3.6: {}
 
   import-meta-resolve@4.1.0: {}
 
@@ -5283,6 +5296,12 @@ snapshots:
     dependencies:
       suf-log: 2.5.3
 
+  sass@1.77.1:
+    dependencies:
+      chokidar: 3.6.0
+      immutable: 4.3.6
+      source-map-js: 1.2.0
+
   sax@1.3.0: {}
 
   section-matter@1.0.0:
@@ -5710,17 +5729,18 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite@5.2.11:
+  vite@5.2.11(sass@1.77.1):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.17.2
     optionalDependencies:
       fsevents: 2.3.3
+      sass: 1.77.1
 
-  vitefu@0.2.5(vite@5.2.11):
+  vitefu@0.2.5(vite@5.2.11(sass@1.77.1)):
     optionalDependencies:
-      vite: 5.2.11
+      vite: 5.2.11(sass@1.77.1)
 
   volar-service-css@0.0.43(@volar/language-service@2.2.1):
     dependencies:
