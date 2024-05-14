@@ -28,7 +28,7 @@ const { items } = Astro.props as Props;
                     <div class="lg:mb-2">{item.subheader}</div>
                   </li>
                   <li class="w-full pricing-details md:mb-10 lg:mb-12" set:html={item.details}></li>
-                  <li class="w-full md:mt-5 lg:mt-10 self-end"><a href="#" class={item.category_color + ' underline'}">{item.cta}</a></li>
+                  <li class="w-full md:mt-5 lg:mt-10 self-end"><a href="/" class={item.category_color + ' underline'}">{item.cta}</a></li>
               </ul>
           </div>
           ))}
