@@ -1,0 +1,45 @@
+---
+import 'flowbite';
+import HeaderLink from "@components/Link.astro";
+import { localizePath } from "@utils/t.ts";
+import ThemeSelector from "@components/ThemeSelector.astro";
+import { Image } from 'astro:assets';
+import { SITE_TITLE, PAGES } from "@src/consts";
+
+const url = Astro.url;
+---
+
+
+
+<aside id="default-sidebar" class="hide-sm bg-dd-purple top-0 left-0 z-40 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+   <div class="h-full px-5 py-4 overflow-y-auto dark:bg-gray-800">
+    <a	href={localizePath("/", url)}
+        class="mb-10 flex gap-3 items-center text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark:text-white focus:outline-none focus:shadow-outline">
+        <Image src="/src/assets/images/logo.png"
+                    alt={SITE_TITLE}
+                    width="96px"
+                    height="100%"
+                  />
+    </a>
+      <ul class="space-y-2 font-medium mb-10">
+        {PAGES.map((item) => (
+            <li>
+                <a href="#" class="flex mb-7 text-gray-900 text-white dark:text-white ">
+                   <span>{item.title}</span>
+                </a>
+            </li>
+        ))}
+      </ul>
+      <a href="#" class="flex mt-10 text-gray-900 text-white dark:text-white ">
+        <span>Login</span>
+      </a>
+   </div>
+</aside>
+
+
+<button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="fixed mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+   <span class="sr-only">Open sidebar</span>
+   <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+   <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+   </svg>
+</button>

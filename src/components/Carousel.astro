@@ -1,0 +1,28 @@
+---
+export interface Props {
+    items: Array<string>;
+}
+import { Image } from 'astro:assets';
+
+const { items } = Astro.props as Props;
+---
+
+
+<div class="module-tall db-tile-6 bg-dd-grey">
+    <div>
+     {items.map((item) => (
+      <div class="carousel-item">
+          <h6>{item.category}</h6>
+          <div class="header-3">{item.text}</div>
+          <a href="#" class="underline">Read more</a>
+          <Image src={item.image}
+              alt={item.alt + ' slide'}
+              width="500px"
+              height="100%"
+            />
+      </div>
+     ))}
+    </div>
+
+
+</div>

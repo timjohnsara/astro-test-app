@@ -1,0 +1,34 @@
+---
+// import translations
+import translations from "@utils/t.ts";
+import Layout from "@layouts/Layout.astro";
+import Container from "@src/components/Container.astro";
+import Pricing from "@components/Pricing.astro";
+import Features from "@components/Features.astro";
+import Customers from "@components/Customers.astro";
+import Carousel from "@components/Carousel.astro";
+import { PRICINGS, FEATURES, CUSTOMERS, CAROUSEL } from "@src/consts";
+const t = translations(Astro.url);
+---
+
+<Layout>
+    <div class="dashboard bg-white">
+        <div class="pt-16 dashboard-grid-container">
+            <div class="module-1 db-tile-1">
+                <div class="flex flex-wrap h-full">
+                    <div class="w-full">
+                        <h1 class="mb-5" set:html={t.home_header} />
+                        <h3 set:html={t.home_subheader} />
+                    </div>
+                    <button class="self-end	w-full bg-transparent hover:bg-dd-purple text-dd-purple font-semibold hover:text-white py-4 px-4 border border-dd-purple hover:border-transparent text-lg text-uppercase">Try Free</button>
+                </div>
+            </div>
+            <Pricing items={PRICINGS} />
+            <Features items={FEATURES[0]}  />
+            <Features items={FEATURES[1]} />
+            <Features items={FEATURES[2]}  />
+            <Customers items={CUSTOMERS} />
+            <Carousel items={CAROUSEL}  />
+        </div>
+	</div>
+</Layout>

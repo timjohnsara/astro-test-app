@@ -1,0 +1,38 @@
+---
+export interface Props {
+    items: Array<string>;
+    dataClass: string;
+}
+const { items } = Astro.props as Props;
+---
+
+<div class="module db-tile-2">
+  <div class="module bg-dd-grey dark:bg-gray-900">
+
+      <div class="space-y-12 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+          <!-- Pricing Card -->
+          {items.map((item) => (
+          <div class="p-6 mx-auto max-w-lg text-gray-900">
+
+              <!-- List -->
+
+              <ul role="list" class="flex flex-wrap h-full">
+
+                  <li class={item.category_color + ' w-full mb-2'}">
+                      <!-- Icon -->
+                      <span>{item.tag}</span>
+                  </li>
+                  <li class="w-full mb-2">
+                    <div class="mb-2">{item.header}</div>
+                    <div class="header-1 mb-3">{item.price}</div>
+                    <div class="mb-2">{item.subheader}</div>
+                  </li>
+                  <li class="w-full pricing-details mb-12" set:html={item.details}></li>
+                  <li class="w-full mt-10 self-end"><a href="#" class={item.category_color + ' underline'}">{item.cta}</a></li>
+              </ul>
+          </div>
+          ))}
+
+      </div>
+  </div>
+</div>

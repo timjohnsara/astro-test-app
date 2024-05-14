@@ -1,0 +1,26 @@
+---
+
+import { Image } from "astro:assets";
+const { items } = Astro.props as Props;
+const { src, alt, ...props } = Astro.props;
+
+const images = await Astro.glob("../assets/images/*").then(files => {
+  return files.map(file => file.default);
+});
+
+export interface Props {
+    items: Array<string>;
+}
+
+
+
+
+---
+<div class={items.class_name + ' module feature-module'}>
+     <div class="flex flex-wrap h-full feature-item grid-image bg-image" id={items.tag + 'Image'}>
+          <div class="container text-center self-center">
+            <h5 class="">{items.tag}</h5>
+            <h3>{items.feature_header}</h3>
+          </div>
+      </div>
+</div>
