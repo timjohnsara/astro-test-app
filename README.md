@@ -1,3 +1,4 @@
+
 <h1 align="center"> Astro Starter Kit</h1>
 
 <br />
@@ -80,18 +81,6 @@ There's nothing special about `src/components/`, but that's where we like to put
 The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
 
 Any static assets, like images, can be placed in the `public/` directory.
-
-### ✍️ Admin dashboard
-
-You can access the admin dashboard for editing blog post at `/admin` (https://example.com/admin)
-
-Sveltia cms uses the same configuration as Decap cms, so you can follow the documentation at https://decapcms.org/docs.
-
-In order to access the admin dashboard to change blog articles content you need to have access to the github repo, a quick way to test it test would be fork the repo and than configure sveltia cms accordingly to your cloud provider (netlify, cloudflare, vercel, etc...).
-
-If you use cloudflare pages you can follow this guide https://github.com/i40west/netlify-cms-cloudflare-pages.
-
-If you use netlify it's actually easier, you will need to change in the file `astro.config.mjs` NetlifyCMS config `config.backend.name` to git-gateway. (See https://decapcms.org/docs/git-gateway-backend/#git-gateway-with-netlify for more info)
 
 ### 👀 Want to learn more?
 

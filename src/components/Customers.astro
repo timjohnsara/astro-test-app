@@ -40,7 +40,7 @@ const items = (await getCollection("customers", (entry) => entry.slug.startsWith
           />
           <div class="customer-item-hidden">
             <p class="mb-4">{item.data.description}<p>
-            <div>{item.data.bio_author}</div>
+            <div class="font-bold mb-4">{item.data.bio_author}</div>
             <a href="#" class="text-dd-purple font-light">See More Stories</a>
           </div>
       </div>

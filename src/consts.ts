@@ -19,27 +19,27 @@ type Page = {
 export const PAGES: Page[] = [
 	{
 		title: "Products",
-		href: "#",
+		href: "/",
 	},
 	{
 		title: "Docs",
-		href: "#",
+		href: "/",
 	},
 	{
 		title: "Pricing",
-		href: "#",
+		href: "/",
 	},
 	{
 		title: "Customer",
-		href: "#",
+		href: "/",
 	},
 	{
 		title: "About",
-		href: "#",
+		href: "/",
 	},
 	{
 		title: "Blog",
-		href: "#",
+		href: "/",
 	}
 ];
 
@@ -67,7 +67,7 @@ export const PRICINGS: Pricing[] = [
 			'<li>– Out-of-the-box dashboards</li>',
 			'<li>– 15-month metric retention</li></ul>'
 		],
-		url: '#',
+		url: '/',
 		cta: 'See Details',
 		category_color: 'text-dd-purple',
 	},
@@ -82,7 +82,7 @@ export const PRICINGS: Pricing[] = [
 			'<li>– Out-of-the-box application health dashboards</li>',
 			'<li>– 1 million trace events per host included</li></ul>'
 		],
-		url: '#',
+		url: '/',
 		cta: 'See Details',
 		category_color: 'text-dd-green',
 	},
@@ -97,7 +97,7 @@ export const PRICINGS: Pricing[] = [
 			'<li>– Automated & custom processing</li>',
 			'<li>– Fully integrated with Infrastructure and APM</li></ul>'
 		],
-		url: '#',
+		url: '/',
 		cta: 'See Details',
 		category_color: 'text-dd-orange',
 	}
@@ -148,7 +148,7 @@ export const CAROUSEL: carousel[] = [
 		alt: "Observability",
 		category: "Observability",
 		text: "With turn-key integrations, Datadog seamlessly aggregates metrics and events across the full devops stack",
-		link: '#',
+		link: '/',
 		format: "webp",
 		width: 1350,
 		height: 1080,
@@ -158,7 +158,7 @@ export const CAROUSEL: carousel[] = [
 		alt: "Dashboard",
 		category: "Dashboard",
 		text: "With turn-key integrations, Datadog seamlessly aggregates metrics and events across the full devops stack",
-		link: '#',
+		link: '/',
 		format: "webp",
 		width: 1350,
 		height: 1080,
@@ -173,83 +173,6 @@ type customer = {
 	state: string;
 	color_class: string;
 };
-
-export const CUSTOMERS: customer[] = [
-	{
-		name: 'airbnb',
-		bio: 'lorem ipsum',
-		bio_author: "Valentino Volonghi\n" +
-			"Chief Technology Officer",
-		image: '/src/assets/images/logos/airbnb.png',
-		state: 'inactive',
-		color_class: 'bg-airbnb',
-	},
-	{
-		name: 'adroll',
-		bio: '“Datadog has been instrumental in managing our real-time infrastructure, globally distributed in 5 data centers across hundreds of instances, and thousands of different metrics and dimensions for each host. I can\'t believe there was a time when we didn\'t have Datadog.”',
-		bio_author: "",
-		image: '/src/assets/images/logos/adroll.png',
-		state: 'active',
-		color_class: 'bg-adroll',
-	},
-	{
-		name: 'peloton',
-		bio: 'lorem ipsum',
-		bio_author: "",
-		image: '/src/assets/images/logos/peloton.png',
-		state: 'inactive',
-		color_class: 'bg-peloton',
-	},
-	{
-		name: 'evernote',
-		bio: 'lorem ipsum',
-		bio_author: "",
-		image: '/src/assets/images/logos/evernote.png',
-		state: 'inactive',
-		color_class: 'bg-evernote',
-	},
-	{
-		name: 'samsung',
-		bio: 'lorem ipsum',
-		bio_author: "",
-		image: '/src/assets/images/logos/samsung.png',
-		state: 'inactive',
-		color_class: 'bg-samsung',
-	},
-	{
-		name: 'nginx',
-		bio: 'lorem ipsum',
-		bio_author: "",
-		image: '/src/assets/images/logos/nginx.png',
-		state: 'inactive',
-		color_class: 'bg-nginx',
-	},
-	{
-		name: 'pagerduty',
-		bio: 'lorem ipsum',
-		bio_author: "",
-		image: '/src/assets/images/logos/pageduty.png',
-		state: 'inactive',
-		color_class: 'bg-pagerduty',
-	},
-	{
-		name: 'wholefoods',
-		bio: 'lorem ipsum',
-		bio_author: "",
-		image: '/src/assets/images/logos/wholefoods.png',
-		state: 'inactive',
-		color_class: 'bg-wholefoods',
-	},
-	{
-		name: 'att',
-		bio: 'lorem ipsum',
-		bio_author: "",
-		image: '/src/assets/images/logos/att.png',
-		state: 'inactive',
-		color_class: 'bg-att',
-	},
-
-]
 
 
 // i18n
