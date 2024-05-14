@@ -1,6 +1,19 @@
 
 <h1 align="center"> Astro Starter Kit</h1>
 
+<h3>
+    This project is being used specifically for the Datadog coding challenge.
+</h3>
+<p>Here are a few screenshots of how the page should look when rendered</p>
+
+<ul>
+<li><img src="src/assets/screenshots/1.png" /></li>
+<li><img src="src/assets/screenshots/2.png" /></li>
+<li><img src="src/assets/screenshots/3.png" alt="mobile" width="320px"/></li>
+</ul>
+
+
+
 <br />
 
 
@@ -29,11 +42,10 @@
 -   ✅ Localization (with astro-i18n-aut)
 -   ✅ Dark/light mode
 -   ✅ Blog
--   ✅ Discussions (thanks to giscus)
--   ✅ CMS for editing blog post (thanks to Sveltia CMS)
 -   ✅ Sitemap (localized)
 -   ✅ RSS (localized)
 -   ✅ PWA
+-   ✅ SCSS
 
 ### 🧞 Commands
 
