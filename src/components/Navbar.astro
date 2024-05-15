@@ -9,8 +9,8 @@ const url = Astro.url;
 
 
 
-<aside id="default-sidebar" class="hide-sm bg-dd-purple top-0 left-0 z-40 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-   <div class="h-full px-5 py-4 overflow-y-auto dark:bg-gray-800">
+<aside id="default-sidebar" @click="alert('Hello whoever is reviewing this!')" class="hide-sm bg-dd-purple top-0 left-0 z-40 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+   <div class="h-full px-5 py-4 overflow-y-auto dark:bg-gray-800" >
     <a	href={localizePath("/", url)}
         class="mb-10 flex gap-3 items-center text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark:text-white focus:outline-none focus:shadow-outline">
         <Image src="/src/assets/images/logo.png"
